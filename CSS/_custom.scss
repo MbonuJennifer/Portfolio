@@ -1,0 +1,39 @@
+@mixin cardBackground {
+    background-color: rgba(255, 255, 255, 0.6);
+    -webkit-box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    border-radius: 20px;
+    border-top-color: rgba(255, 255, 255, 0.3);
+    border-left-color: rgba(255, 255, 255, 0.5);
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+    border-right-color: rgba(255, 255, 255, 0.1);
+}
+
+.Rectangle {
+    @include cardBackground;
+}
+.logoBrand{
+    width: 150px;
+    height: 150px;
+    color: black;
+}
+
+@mixin buttonBg {
+    // background: rgb(255,111,145);
+    // background: linear-gradient(90deg, rgba(255,111,145,1) 0%, rgba(255,150,113,1) 35%, rgba(255,199,95,1) 100%);
+    border: 1px solid #D2A218;
+}
+.navButton {
+    @include buttonBg
+}
+.navButton:hover {
+    background: linear-gradient(to top right, rgba(255,111,145,1) 0%, rgba(255,150,113,1) 35%, rgba(255,199,95,1) 100%);
+}
+
+
+$darkOrange: #FF9671;
+$lightOrange: #FFC75F;
+$darkpink: #FF6F91;
+
